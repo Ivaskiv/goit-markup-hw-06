@@ -97,6 +97,9 @@ body {
             color: var(--color-ocean); 
 }
 .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-size: 18px;
@@ -1282,3 +1285,127 @@ border: none;
     text-align: start;
     color: var(--color-blue);
 }
+/* Верстка виконана щодо трьох точок перелому: 428px, 768px і 1158px.  */
+.icon-menu-hamburger-svg {
+    stroke: var(--color-blue);
+}
+.header__container {
+  max-width: 428px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 428px) {
+  .header__container {
+    max-width: 428px;
+  }
+}
+@media (max-width: 767px) {
+    .h-nav__list,
+    .header__address {
+    display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    max-width: 768px;
+  }
+  .menu-toggle {
+    display: none;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .header__container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
+/* .h-nav__list,
+.header__address {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+.h-nav__list .link,
+.header__address .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.h-nav__list  .link:hover,
+.header__address .link:focus {
+    text-decoration: underline;
+}
+
+.menu-toggle {
+  min-height: 32px;
+  min-width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #ba2323;
+}
+.menu-hamburger-svg {
+    stroke: var(--color-blue);
+}
+
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #3f51b5;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  padding: 10px;
+  color: #fff;
+  text-decoration: none;
+} */
