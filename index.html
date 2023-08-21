@@ -20,34 +20,97 @@
     <!--site header-->
     <header class="header">
         <div class="header__container container">
-            <a href="./index.html" class="logo link">
-                Web<span class="logo-dark">Studio</span>
-            </a>
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="icon-menu-hamburger-svg icon" width="32" height="22">
-                    <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
-                </svg>
-            </button>
             <!--site logo-->
-                <nav class="header__nav h-nav">
-                    <!--nav list-->
-                    <ul class="h-nav__list list">
-                        <li class="h-nav__list-li"><a href="./index.html" class="h-nav__link current link">Studio</a></li>
-                        <li class="h-nav__list-li"><a href="./portfolio.html" class="h-nav__link link">Portfolio</a></li>
-                        <li class="h-nav__list-li"><a href="" class="h-nav__link link">Contacts</a></li>
-                    </ul>
-                </nav>
-                    <!--contacts-->
-                <address class="header__address h-address">
-                    <ul class="h-address__list list">
-                        <li class="h-address__list-li h-nav__list-li"><a class="contact-links link"
-                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                        <li class="h-address__list-li h-nav__list-li"><a class="contact-links link"
-                                href="tel:+110001111111">+11(000)111-11-11</a></li>
-                    </ul>
-                </address>
+            <nav class="header__nav h-nav">
+                <a href="./index.html" class="logo link">
+                    Web<span class="logo-dark">Studio</span>
+                </a>
+                <!--nav list-->
+                <ul class="h-nav__list list">
+                    <li class="h-nav__list-li"><a href="./index.html" class="h-nav__link current link">Studio</a></li>
+                    <li class="h-nav__list-li"><a href="./portfolio.html" class="h-nav__link link">Portfolio</a></li>
+                    <li class="h-nav__list-li"><a href="" class="h-nav__link link">Contacts</a></li>
+                </ul>
+            </nav>
+            <!--contacts-->
+            <address class="header__address h-address">
+                <ul class="h-address__list list">
+                    <li class="h-address__list-li h-nav__list-li"><a class="contact-links link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="h-address__list-li h-nav__list-li"><a class="contact-links link"
+                            href="tel:+110001111111">+11(000)111-11-11</a></li>
+                </ul>
+            </address>
         </div>
-    </header>
+<!-- mobile-menu -->
+<button class="mobile-menu__open js-open-menu" type="button">
+    <svg class="mobile-menu__open-icon" aria-label="mobile-menu-open" width="32" height="22" stroke="var(--color-grey)">
+        <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+    </svg>
+</button>
+
+<div class="mobile-menu__container js-menu-container">
+    <div class="mobile-menu__wrapper">
+        <button class="mobile-menu__close js-close-menu" type="button">
+            <svg class="mobile-menu__close-icon" aria-label="mobile-menu-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__nav current link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__nav link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__nav link" href="">Contacts</a>
+            </li>
+        </ul>
+        <address class="mobile-menu__contacts">
+            <ul class="mobile-menu__contacts-list list">
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+        <ul class="mobile-menu__social-list list">
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                    <svg class="mobile-menu__social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                    <svg class="mobile-menu__social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                    <svg class="mobile-menu__social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                    <svg class="mobile-menu__social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+</header>
     <!--main content-->
     <main>
         <!--section_1_banner-->
@@ -366,9 +429,6 @@
         </section>
 
     </main>
-
-
-
     <!-- footer -->
     <footer class="footer">
         <div class="footer__wrapper container">
