@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Effective Solutions
-    for Your Business">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Effective Solutions for Your Business">
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,11 @@
     <header class="header">
         <div class="header__container container">
             <!-- mobile-menu -->
-            
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu__open-icon" aria-label="mobile-menu-open" width="32" height="22">
+                    <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
+                </svg>
+            </button>
             <!--site logo-->
             <nav class="header__nav h-nav">
                 <a href="./index.html" class="logo link">
@@ -43,11 +47,7 @@
                             href="tel:+110001111111">+11(000)111-11-11</a></li>
                 </ul>
             </address>
-            <button class="mobile-menu__open js-open-menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
-                <svg class="mobile-menu__open-icon" aria-label="mobile-menu-open" width="32" height="22">
-                    <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
-                </svg>
-            </button>
+            
         </div>
 
 
@@ -373,7 +373,7 @@
     </main>
     <div class="mobile-menu__container js-menu-container" id="mobile-menu">
         <div class="mobile-menu__wrapper">
-            <button class="mobile-menu__close js-close-menu" type="button">
+            <button class="menu-toggle js-close-menu">
                 <svg class="mobile-menu__close-icon" aria-label="mobile-menu-close" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black-18dp"></use>
                 </svg>
@@ -584,8 +584,8 @@
         </div>
     </div>
 
-    <script src="./modal.js"></script>
-
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
