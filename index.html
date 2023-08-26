@@ -20,26 +20,26 @@
     <!--site header-->
     <header class="header">
         <div class="header__container container">
-            <!-- mobile-menu -->
+            
             <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="mobile-menu__open-icon" aria-label="mobile-menu-open" width="32" height="22">
                     <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
                 </svg>
             </button>
-            <!--site logo-->
+            
             <nav class="header__nav h-nav">
                 <a href="./index.html" class="logo link">
                     Web<span class="logo-dark">Studio</span>
                 </a>
-                <!--nav list-->
-                <ul class="h-nav__list list">
+                
+                <ul class="menu h-nav__list list">
                     <li class="h-nav__list-li"><a href="./index.html" class="h-nav__link current link">Studio</a></li>
                     <li class="h-nav__list-li"><a href="./portfolio.html" class="h-nav__link link">Portfolio</a></li>
                     <li class="h-nav__list-li"><a href="" class="h-nav__link link">Contacts</a></li>
                 </ul>
             </nav>
-            <!--contacts-->
-            <address class="header__address h-address">
+        
+            <address class="menu header__address h-address">
                 <ul class="h-address__list list">
                     <li class="h-address__list-li h-nav__list-li"><a class="contact-links link"
                             href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -49,23 +49,21 @@
             </address>
             
         </div>
-
-
-</div>
+    </div>
 </header>
     <!--main content-->
     <main>
         <!--section_1_banner-->
         <section class="banner">
-            <div class="container banner__container">
-                <h1 class="banner__title">Effective Solutions<br />for Your Business</h1>
+            <div class="banner__container container">
+                <h1 class="banner__title">Effective Solutions<br /> for Your Business</h1>
                 <button data-modal-open="modal" class="banner__btn" type="button">Order Service</button>
 
             </div>
         </section>
         <!-- section_2_feature-->
         <section class="features section">
-            <div class="container">
+            <div class="features-container container">
                 <h2 class="visually-hidden">List of features</h2>
                 <ul class="features__list list">
                     <li class="features__li">
@@ -141,7 +139,7 @@
         </section>
         <!-- section_4_our-team -->
         <section class="our-team">
-            <div class="container">
+            <div class="our-team__container container">
                 <h2 class="our-team__title section-title">Our Team</h2>
                 <ul class="our-team__list list">
                     <li class="our-team__card">
@@ -150,7 +148,6 @@
                             <h3 class="our-team__card-title">Mark Guerrero</h3>
                             <p class="our-team__card-text">Product Designer</p>
 
-                            <!--icon card-->
                             <ul class="our-team__card-icon">
                                 <li class="our-team__card-icon-li">
                                     <a href="" class="our-team__card-icon-li-link link">
@@ -191,7 +188,6 @@
                         <div class="our-team__card-content">
                             <h3 class="our-team__card-title">Tom Ford</h3>
                             <p class="our-team__card-text">Frontend Developer</p>
-                            <!--icon card-->
                             <ul class="our-team__card-icon">
                                 <li class="our-team__card-icon-li">
                                     <a href="" class="our-team__card-icon-li-link link">
@@ -232,7 +228,6 @@
                         <div class="our-team__card-content">
                             <h3 class="our-team__card-title">Camilla Garcia</h3>
                             <p class="our-team__card-text">Marketing</p>
-                            <!--icon card-->
                             <ul class="our-team__card-icon">
                                 <li class="our-team__card-icon-li">
                                     <a href="" class="our-team__card-icon-li-link link">
@@ -273,7 +268,6 @@
                         <div class="our-team__card-content">
                             <h3 class="our-team__card-title">Daniel Wilson</h3>
                             <p class="our-team__card-text">UI Designer</p>
-                            <!--icon card-->
                             <ul class="our-team__card-icon">
                                 <li class="our-team__card-icon-li">
                                     <a href="" class="our-team__card-icon-li-link link">
@@ -314,7 +308,7 @@
         </section>
         <!-- section_5_customers -->
         <section class="customers">
-            <div class="container customers__container">
+            <div class="customers__container container">
                 <h2 class="customers__title">Customers</h2>
 
                 <ul class="customers__logo list">
@@ -371,66 +365,7 @@
         </section>
 
     </main>
-    <div class="mobile-menu__container js-menu-container" id="mobile-menu">
-        <div class="mobile-menu__wrapper">
-            <button class="menu-toggle js-close-menu">
-                <svg class="mobile-menu__close-icon" aria-label="mobile-menu-close" width="8" height="8">
-                    <use href="./images/icons.svg#icon-close-black-18dp"></use>
-                </svg>
-            </button>
-            <ul class="mobile-menu__list list">
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__nav current link" href="./index.html">Studio</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__nav link" href="./portfolio.html">Portfolio</a>
-                </li>
-                <li class="mobile-menu__item">
-                    <a class="mobile-menu__nav link" href="">Contacts</a>
-                </li>
-            </ul>
-            <address class="mobile-menu__contacts">
-                <ul class="mobile-menu__contacts-list list">
-                    <li class="mobile-menu__contacts-item">
-                        <a class="mobile-menu__contacts-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                    </li>
-                    <li class="mobile-menu__contacts-item">
-                        <a class="mobile-menu__contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                    </li>
-                </ul>
-            </address>
-            <ul class="mobile-menu__social-list list">
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" href="">
-                        <svg class="mobile-menu__social-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" href="">
-                        <svg class="mobile-menu__social-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" href="">
-                        <svg class="mobile-menu__social-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-                </li>
-                <li class="mobile-menu__social-item">
-                    <a class="mobile-menu__social-link link" href="">
-                        <svg class="mobile-menu__social-icon" width="16" height="16">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    
     <!-- footer -->
     <footer class="footer">
         <div class="footer__wrapper container">
@@ -447,7 +382,6 @@
             <div class="footer__social-media">
                 <p class="footer-social-media__text">Social media</p>
 
-                <!--icon card-->
                 <ul class="footer-social">
 
                     <li class="footer-social__icon-li">
@@ -482,9 +416,8 @@
                         </a>
                     </li>
                 </ul>
-            </div>
-
-            <!-- footer-Subscribe -->
+            </div> 
+            
             <div class="footer-subscribe">
 
                 <p class="footer-subscribe-title">Subscribe</p>
@@ -514,7 +447,7 @@
             </button>
 
             <p class="modal__title">Leave your contacts and we will call you back</p>
-            <!-- modal-form -->
+
             <form>
                 <div class="modal__form">
                     <label class="modal__form-label" for="user-name">
@@ -584,6 +517,66 @@
         </div>
     </div>
 
+<div class="mobile-menu__container js-menu-container" id="mobile-menu">
+    <div class="mobile-menu__wrapper">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile-menu__close-icon" aria-label="mobile-menu-close" width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black-18dp"></use>
+            </svg>
+        </button>
+        <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__nav current link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__nav link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu__item">
+                <a class="mobile-menu__nav link" href="">Contacts</a>
+            </li>
+        </ul>
+        <address class="mobile-menu__contacts">
+            <ul class="mobile-menu__contacts-list list">
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                </li>
+                <li class="mobile-menu__contacts-item">
+                    <a class="mobile-menu__contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+        <ul class="mobile-menu__social-list list">
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                    <svg class="mobile-menu__social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                    <svg class="mobile-menu__social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                    <svg class="mobile-menu__social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="mobile-menu__social-item">
+                <a class="mobile-menu__social-link link" href="">
+                    <svg class="mobile-menu__social-icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
