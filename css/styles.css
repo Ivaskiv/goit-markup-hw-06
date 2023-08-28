@@ -1029,9 +1029,6 @@ body {
                     
 }
 .modal.is-visible {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
     height: 100vh;
 }
 .modal__close {
