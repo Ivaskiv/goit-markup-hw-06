@@ -21,7 +21,7 @@
     <header class="header">
         <div class="header__container container">
             
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <button class="menu-toggle-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="mobile-menu__open-icon" aria-label="mobile-menu-open" width="32" height="22">
                     <use href="./images/icons.svg#icon-charm_menu-hamburger"></use>
                 </svg>
@@ -33,12 +33,12 @@
                 </a>
                 
                 <ul class="menu h-nav__list list">
-                    <li class="h-nav__list-li"><a href="./index.html" class="h-nav__link current link">Studio</a></li>
-                    <li class="h-nav__list-li"><a href="./portfolio.html" class="h-nav__link link">Portfolio</a></li>
-                    <li class="h-nav__list-li"><a href="" class="h-nav__link link">Contacts</a></li>
+                    <li class="h-nav__list-li"><a href="./index.html" class="mobile-menu-link current-mob link">Studio</a></li>
+                    <li class="h-nav__list-li"><a href="./portfolio.html" class="mobile-menu-link h-nav__link link">Portfolio</a></li>
+                    <li class="h-nav__list-li"><a href="" class="mobile-menu-link h-nav__link link">Contacts</a></li>
                 </ul>
             </nav>
-        
+        <!--  -->
             <address class="menu header__address h-address">
                 <ul class="h-address__list list">
                     <li class="h-address__list-li h-nav__list-li"><a class="contact-links link"
@@ -519,14 +519,14 @@
 
 <div class="mobile-menu__container js-menu-container" id="mobile-menu">
     <div class="mobile-menu__wrapper">
-        <button class="menu-toggle js-close-menu">
+        <button class="mobile__close js-close-menu">
             <svg class="mobile-menu__close-icon" aria-label="mobile-menu-close" width="8" height="8">
                 <use href="./images/icons.svg#icon-close-black-18dp"></use>
             </svg>
         </button>
         <ul class="mobile-menu__list list">
             <li class="mobile-menu__item">
-                <a class="mobile-menu__nav current link" href="./index.html">Studio</a>
+                <a class="mobile-menu__nav link" href="./index.html">Studio</a>
             </li>
             <li class="mobile-menu__item">
                 <a class="mobile-menu__nav link" href="./portfolio.html">Portfolio</a>
@@ -537,15 +537,15 @@
         </ul>
         <address class="mobile-menu__contacts">
             <ul class="mobile-menu__contacts-list list">
-                <li class="mobile-menu__contacts-item">
+                <li class="mobile-menu__contacts-item-tel">
                     <a class="mobile-menu__contacts-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                 </li>
-                <li class="mobile-menu__contacts-item">
+                <li class="mobile-menu__contacts-item-mail">
                     <a class="mobile-menu__contacts-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
             </ul>
         </address>
-        <ul class="mobile-menu__social-list list">
+        <ul class="mobile-menu__social-list">
             <li class="mobile-menu__social-item">
                 <a class="mobile-menu__social-link link" href="">
                     <svg class="mobile-menu__social-icon" width="16" height="16">
