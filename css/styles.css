@@ -720,7 +720,7 @@ body {
     }
 @media screen and (max-width: 400px) {
     .mobile-menu__contacts-tel {
-        font-size: 24px;
+        font-size: 24px;    
     }
 }
 
@@ -733,11 +733,6 @@ body {
 }
 /* mobile-menu */
 @media (max-width: 768px){
-    .mobile-menu__contacts-tel,
-    .mobile-menu,
-    .mobile-menu__wrapper .mobile-menu__social-list {
-        width: 100%;
-    }
     .mobile-menu__wrapper {
         height: 100%;
         display: flex;
@@ -1032,9 +1027,7 @@ body {
 }
 .modal__main {
     position: absolute;
-    width: 392px;
     width: 100%;
-    max-width: calc(100% - 2 * 18px);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1); 
@@ -1254,9 +1247,9 @@ input[type="checkbox"]:checked + .checkbox-container {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    
     margin-top: 72px;
     margin-bottom: 16px;
-    text-align: center;
 }
 
 .modal__form-comment {
