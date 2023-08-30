@@ -57,6 +57,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     background-color: var(--color-white);
+
+    overflow: is-hidden;
 }
 .visually-hidden {
     position: absolute;
@@ -834,14 +836,14 @@ body {
         padding-left: 0;
         justify-content: space-between;
     }
-    
 }
 @media (max-width: 767.98px) {
     .our-team__list:not(:last-child) {
         margin-bottom: 24px;
     }
-    
 }
+
+
 /* Desktop screens */
 @media screen and (min-width: 1158px) {
     .container { 
@@ -857,14 +859,17 @@ body {
     .header__address {
         display: flex;
     }
-    /* .banner {
+    .banner {
         margin: 0;
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
                 rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg); 
-    } */
+    }
     .banner__title {
         margin-bottom: 48px;
+    }
+    .modal {
+        padding-top: 80px;
     }
     .features {
         padding: 0;
@@ -1005,7 +1010,7 @@ body {
         display: flex;
         justify-content: center;
         padding-top: 96px;
-        
+        overflow-y: scroll;
     position: fixed;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1013,14 +1018,10 @@ body {
     cursor: pointer;
     z-index: 9999;
 }
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none; 
-}
 .modal__main {
     position: absolute;
-    width: 392px;
+    max-width: 392px;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%) scale(1); 
     background: var(--color-modal);
@@ -1030,12 +1031,16 @@ body {
                 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     /* padding: 72px 24px 24px 24px; */
-                    
+                
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; 
 }
 @media screen and (min-width:768px) {
     .modal__main {
-        width: 408px;
-        padding-top: 80px;
+        max-width: 408px;
     }
 }
 .modal.is-visible {
